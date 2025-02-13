@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link }  from "react-router-dom";
 
 const MenuIcon = () => (
   <svg
@@ -47,44 +48,44 @@ function Menu() {
   const [isMobile, setIsMobile] = useState(false);
 
   const menuItems = [
-    { label: 'Inicio', link: '#home' },
+    { label: 'Inicio', link: '/' },
     {
       label: 'Motocross',
       submenus: [
-        { label: 'Resultados', link: '#resultados' },
-        { label: 'Campeonato', link: '#campeonato' },
-        { label: 'Reglamento', link: '#reglamento' },
-        { label: 'Calendario', link: '#calendario' }
+        { label: 'Resultados', link: '/motocross/resultados' },
+        { label: 'Campeonato', link: '/motocross/campeonato' },
+        { label: 'Reglamento', link: '/motocross/reglamento' },
+        { label: 'Calendario', link: '/motocross/calendario' }
       ]
     },
     {
       label: 'Enduro',
       submenus: [
-        { label: 'Resultados', link: '#resultados' },
-        { label: 'Campeonato', link: '#campeonato' },
-        { label: 'Reglamento', link: '#reglamento' },
-        { label: 'Calendario', link: '#calendario' }
+        { label: 'Resultados', link: '/enduro/resultados' },
+        { label: 'Campeonato', link: '/enduro/campeonato' },
+        { label: 'Reglamento', link: '/enduro/reglamento' },
+        { label: 'Calendario', link: '/enduro/calendario' }
       ]
     },
     {
       label: 'Velocidad',
       submenus: [
-        { label: 'Resultados', link: '#resultados' },
-        { label: 'Campeonato', link: '#campeonato' },
-        { label: 'Reglamento', link: '#reglamento' },
-        { label: 'Calendario', link: '#calendario' }
+        { label: 'Resultados', link: '/velocidad/resultados' },
+        { label: 'Campeonato', link: '/velocidad/campeonato' },
+        { label: 'Reglamento', link: '/velocidad/reglamento' },
+        { label: 'Calendario', link: '/velocidad/calendario' }
       ]
     },
     {
       label: 'Quadcross',
       submenus: [
-        { label: 'Resultados', link: '#resultados' },
-        { label: 'Campeonato', link: '#campeonato' },
-        { label: 'Reglamento', link: '#reglamento' },
-        { label: 'Calendario', link: '#calendario' }
+        { label: 'Resultados', link: '/quadcross/resultados' },
+        { label: 'Campeonato', link: '/quadcross/campeonato' },
+        { label: 'Reglamento', link: '/quadcross/reglamento' },
+        { label: 'Calendario', link: '/quadcross/calendario' }
       ]
     },
-    { label: 'Contacto', link: '#contact' }
+    { label: 'Contacto', link: '/contacto' }
   ];
 
   useEffect(() => {
@@ -157,9 +158,9 @@ function Menu() {
                 <ChevronIcon />
               </button>
             ) : (
-              <a href={item.link} onClick={handleLinkClick}>
+              <Link to={item.link} onClick={handleLinkClick}>
                 {item.label}
-              </a>
+              </Link>
             )}
 
             {item.submenus && (

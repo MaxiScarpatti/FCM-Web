@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+/* Estilos para el Header */
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #000;
+  color: white; /* Ajusta el color según tu diseño */
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 250px; /* Tamaño en desktop */
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 150px;
+  }
+}

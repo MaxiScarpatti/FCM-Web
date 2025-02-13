@@ -10,12 +10,10 @@ function CentralContent() {
         className="bg-image"
       />
       <div className="text-overlay">
-        <h2 className="title">Diciembre 2024</h2>
+        <h2 className="title">Febrero 2025</h2>
         <ul className="event-list">
-          <li>13/10 - Ovalo, Dean Funes</li>
-          <li>19 y 20/10 - Velocidad Ovalo, Justiniano Posse</li>
-          <li>26 y 27/10 - MX Prov, La Quinta Cba</li>
-          <li>26 y 27/10 - CPRO Enduro, Villa Guillinzo</li>
+          <li>8/2 - MX Nocturno, Laboulaye</li>
+          <li>15 y 16/2 - Vuelta al Cajón por relevo, Capilla del Monte</li>
         </ul>
       </div>
     </div>

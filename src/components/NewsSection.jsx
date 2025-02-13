@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import newsImage1 from '../noticia1.jpeg';
 import newsImage2 from '../noticia2.jpeg';
+import newsImage3 from '../noticia3.jpeg';
 
 function NewsSection() {
   const [selectedNews, setSelectedNews] = useState(null);
@@ -8,21 +9,21 @@ function NewsSection() {
   const news = [
     {
       id: 1,
-      title: 'CPRO Enduro, Villa Guillinzo',
+      title: 'Arrancá el CPRO Enduro 2025',
       imageUrl: newsImage1,
-      description: 'Una emocionante competencia en Villa Guillinzo.'
+      description: 'Primera fecha en Cosquín'
     },
     {
       id: 2,
-      title: 'Noticia 2',
+      title: 'Vuelta al Cajón por relevo',
       imageUrl: newsImage2,
-      description: 'Detalles sobre el evento destacado de la semana.'
+      description: '15 y 16 de febrero en Capilla del Monte'
     },
     {
       id: 3,
-      title: 'Noticia 2',
-      imageUrl: newsImage2,
-      description: 'Detalles sobre el evento destacado de la semana.'
+      title: 'MX Nocturno Final',
+      imageUrl: newsImage3,
+      description: 'Final del MX Nocturno en Laboulaye'
     }
   ];
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import Menu from '../components/Menu';
 import logo from '../logonuevo.jpg';
 
 function Header() {
@@ -13,9 +12,6 @@ function Header() {
             className="logo"
           />
           </div>
-          <nav>
-           <Menu></Menu>
-          </nav>
         </div>
       </header>
     );
