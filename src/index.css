@@ -405,3 +405,39 @@ body {
   text-decoration: none;
 }
 
+.credencial-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background-color: #FF7700; /* Naranja del logo */
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.credencial-button:hover {
+  background-color: #E06600; /* Un tono más oscuro al pasar el mouse */
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(255, 119, 0, 0.4);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #000;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: #FF7700; /* Naranja del logo */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

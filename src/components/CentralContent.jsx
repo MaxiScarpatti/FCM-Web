@@ -15,6 +15,15 @@ function CentralContent() {
           <li>8/2 - MX Nocturno, Laboulaye</li>
           <li>15 y 16/2 - Vuelta al Cajón por relevo, Capilla del Monte</li>
         </ul>
+         {/* Botón para acceder a la credencial digital */}
+<a
+          href="http://app.fedcordmot.com.ar/#/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="credencial-button"
+        >
+          Ingresá a Credencial Digital
+        </a>
       </div>
     </div>
   );
